@@ -13,8 +13,50 @@ body {
 }
 
 #clock {
-  background-color: #313639;
   width: 50vh;
   height: 50vh;
   border-radius: 50%;
+  position: relative;
+  background-color: rgba(0, 10, 0, 0.3);
+}
+
+#clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: rotate(90deg);
+}
+
+#small-hand {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  width: 15%;
+
+  height: 8px;
+  background-color: red;
+
+  transform-origin: 100%;
+  transition: all 0.05;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#big-hand {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  width: 30%;
+
+  height: 8px;
+  background-color: blue;
+  transform-origin: 100%;
+}
+#second-hand {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  width: 45%;
+
+  height: 8px;
+  background-color: yellow;
+  transform-origin: 100%;
 }
